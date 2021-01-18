@@ -8,22 +8,28 @@ and open the template in the editor.
     Author     : Rzeju
 */
 
+@import '~bootstrap/scss/bootstrap';
+
 @font-face {
     font-family: 'Berlin Sans';
     src: url('../fonts/BRLNSR.ttf');
 }
+
 @font-face {
     font-family: 'Berlin Sans';
     font-weight: bold;
     src: url('../fonts/BRLNSDB.ttf');
 }
+
 * {
     font-family: 'Berlin Sans';
 }
+
 h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 p {
     letter-spacing: 1.5px;
     color: #999999;
@@ -35,26 +41,31 @@ p {
     border-radius: 0px;
     margin: 0px;
 }
+
 .header_nav ul {
     margin: auto;
     max-width: 590px;
     float: none;
 }
+
 .parallax_nav {
     height: 400px;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
-.parallax_nav>a{
+
+.parallax_nav > a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -215%);
 }
-.navbar_logo img{
+
+.navbar_logo img {
     margin-top: 25px;
 }
-.navbar-default .navbar-nav>li>a {
+
+.navbar-default .navbar-nav > li > a {
     font-family: 'Berlin Sans';
     color: #ffc42d;
     font-size: 19px;
@@ -62,11 +73,10 @@ p {
     text-transform: uppercase;
     transition: 0.4s;
 }
-.navbar-default .navbar-nav>li>a:hover {
+
+.navbar-default .navbar-nav > li > a:hover {
     color: #fff;
 }
-
-
 
 
 .about_section, .attractions_section {
@@ -74,10 +84,12 @@ p {
     color: #888;
     line-height: 25px;
 }
+
 .about_section h1, .contact_section h1, .attractions_section h1 {
     font-size: 40px;
     color: #ffc42d;
 }
+
 .about_section span, .camping_section span, .bungalow_section span, .attractions_section span {
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -87,27 +99,23 @@ p {
 }
 
 
-
 .camping_section {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 80px 0px;
     color: #fff;
     line-height: 25px;
 }
+
 .camping_section h1, .bungalow_section h1 {
     font-size: 40px;
     color: #fff;
 }
 
 
-
-
 .bungalow_section {
     background-color: #141414;
     padding: 80px 0px;
 }
-
-
 
 
 .gallery_image {
@@ -117,6 +125,7 @@ p {
     position: relative;
     background-color: #000;
 }
+
 .gallery_section img {
     width: 100%;
     position: absolute;
@@ -126,31 +135,34 @@ p {
     opacity: 0.4;
     transition: 0.4s;
 }
+
 .gallery_image:hover img {
     opacity: 1;
     width: 105%;
 }
 
 
-
-
 .contact_section {
     background-color: #fff;
     padding: 80px 0px;
 }
+
 .contact_section i {
     font-size: 38px;
     color: #d7d7d7;
 }
+
 .contact_section a {
     display: block;
     letter-spacing: 1.5px;
     color: #999999;
 }
+
 .contact_section a:hover, .contact_section a:active {
     color: #674141;
     text-decoration: none;
 }
+
 .form_input {
     height: 45px;
     margin-bottom: 5px;
@@ -158,6 +170,7 @@ p {
     border-radius: 0px;
     box-shadow: none;
 }
+
 .contact_section .form_textarea {
     height: 200px;
     margin-bottom: 5px;
@@ -167,6 +180,7 @@ p {
     box-shadow: none;
     padding: 11px;
 }
+
 .contact_form_button {
     height: 45px;
     border-radius: 0px;
@@ -176,29 +190,31 @@ p {
     background: none;
     transition: 0.4s;
 }
+
 .contact_form_button:hover, .contact_form_button:active, .contact_form_button:focus {
     background-color: #ffc42d;
     color: #fff;
     border: 2px solid #ffc42d;
 }
+
 .map_section iframe {
     width: 100%;
     pointer-events: none;
 }
 
 
-
-
 footer {
     text-align: center;
     padding: 20px;
 }
+
 footer span {
     font-size: 14px;
     letter-spacing: 1.5px;
     color: #999999;
     line-height: 53px;
 }
+
 .sc_img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -207,24 +223,29 @@ footer span {
     height: 26px;
     transition: 0.4s;
 }
+
 .sc_img:hover {
     filter: none;
     opacity: 1;
 }
+
 .vn_img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     margin: 15px 15px 15px 7px;
     transition: 0.4s;
 }
+
 .vn_img:hover {
     filter: none;
 }
+
 .jd_img {
     opacity: 0.4;
     margin: 15px 15px 15px 7px;
     transition: 0.4s;
 }
+
 .jd_img:hover {
     opacity: 1;
 }

@@ -1,8 +1,7 @@
 @extends('layouts.default')
 
 @section('head')
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="{{mix('css/style.css')}}"/>
+    <link rel="stylesheet" href="{{mix('css/main-site.css')}}"/>
 @endsection
 
 @section('navbar')
