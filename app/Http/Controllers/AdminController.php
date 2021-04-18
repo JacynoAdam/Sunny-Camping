@@ -18,4 +18,14 @@ class AdminController extends Controller
     {
         return view('admin.bills', ['page' => 'bills']);
     }
+
+    public function rooms($current = 0)
+    {
+        $rooms = collect(['101', '102', '103', '104', '105']);
+
+        return view('admin.rooms', [
+            'rooms' => $rooms->toJson(),
+            'current' => $current
+        ]);
+    }
 }
