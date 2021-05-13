@@ -43,6 +43,8 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Client whereStatus($value)
  * @method static Builder|Client whereUpdatedAt($value)
  * @mixin Eloquent
+ * @property string $telephone
+ * @method static Builder|Client whereTelephone($value)
  */
 class Client extends BaseModel
 {

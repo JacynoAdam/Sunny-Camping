@@ -34,6 +34,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder|ClientItem whereServiceId($value)
  * @method static Builder|ClientItem whereUpdatedAt($value)
  * @mixin Eloquent
+ * @method static Builder|ClientItem whereServiceCategoryId($value)
  */
 class ClientItem extends BaseModel
 {
