@@ -24,4 +24,7 @@ use Illuminate\Support\Carbon;
  */
 class Service extends BaseModel
 {
+    const SERVICE_CAMPING = 1;
+    const SERVICE_BUNGALOWS = 2;
+    const SERVICE_GUESTHOUSE = 3;
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Service;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -15,9 +16,9 @@ class ServiceSeeder extends Seeder
     public function run()
     {
         DB::table('services')->insert([
-            ['name' => 'Camping', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Domki', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Pensjonat', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => Service::SERVICE_CAMPING, 'name' => 'Camping', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => Service::SERVICE_BUNGALOWS, 'name' => 'Domki', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => Service::SERVICE_GUESTHOUSE, 'name' => 'Pensjonat', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
 }
